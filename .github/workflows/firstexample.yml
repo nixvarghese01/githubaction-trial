@@ -17,7 +17,8 @@ jobs:
             cat README.md
         - name: generate ascii adworks 
           run: |
-            apt install cowsay -y
+            sudo apt install cowsay -y
+            sleep 20
             cowsay -f dragon "Run for cover im coming" > dragon.txt
 
        
