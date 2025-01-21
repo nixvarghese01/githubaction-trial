@@ -12,6 +12,8 @@ jobs:
 
       - name: run script
         run: | 
+            pwd
+            ls -lrta
             chmod +x ascii.sh
             ./ascii.sh  
             
@@ -21,7 +23,7 @@ jobs:
 
       steps:
       - name: checkout action 
-        run: echp " second job"
+        run: echo " second job"
         
 
 
