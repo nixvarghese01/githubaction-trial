@@ -4,24 +4,24 @@ on: push
 
 jobs:
     first_job:
-        runs-on: ubuntu-latest
+      runs-on: ubuntu-latest
 
-        steps:
-        - name: checkout action 
-          uses: actions/checkout@v4
+      steps:
+      - name: checkout action 
+        uses: actions/checkout@v4
 
-        - name: run script
-          run: | 
+      - name: run script
+        run: | 
             chmod +x ascii.sh
             ./ascii.sh  
             
     second_job:
-        runs-on: ubuntu-22.04
-        needs: first_job
+      runs-on: ubuntu-22.04
+      needs: first_job
 
-        steps:
-        - name: checkout action 
-          run: echp " second job"
+      steps:
+      - name: checkout action 
+        run: echp " second job"
         
 
 
