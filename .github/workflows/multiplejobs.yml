@@ -21,12 +21,8 @@ jobs:
 
         steps:
         - name: checkout action 
-          uses: actions/checkout@v4
-
-        - name: run script
-          run: | 
-            chmod +x ascii.sh 
-            ./ascii.sh 
+          run: echp " second job"
+        
 
 
 
