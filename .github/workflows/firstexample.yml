@@ -20,6 +20,7 @@ jobs:
             sudo apt install cowsay -y
             sleep 20
             cowsay -f dragon "Run for cover im coming" > dragon.txt
+            cat dragon.txt
 
        
 
