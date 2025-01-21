@@ -9,13 +9,16 @@ jobs:
         steps:
         - name: checkout repo
           uses: actions/checkout@v4
-          
-        - name: welcome message
-          run: echo "my first actions"
 
-        - name: list files
-          run: ls
+        - name: script
+          run: | 
+            echo "my first actions"
+            ls -lrta
+            cat README.md
+        - name: generate ascii adworks 
+          run: |
+            apt install cowsay -y
+            cowsay -f dragon "Run for cover im coming" > dragon.txt
 
-        - name: read files
-          run: cat README.md
+       
 
